@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* --variablekaName: value; */
+
+    /* --padding: 40px; */
+    /* ### Primary */
+
+    --brightred: hsl(12, 88%, 59%);
+    --darkblue: hsl(228, 39%, 23%);
+
+    /* ### Neutral */
+
+    --darkgrayishblue: hsl(227, 12%, 61%);
+    --verydarkblue: hsl(233, 12%, 13%);
+    --verypalered: hsl(13, 100%, 96%);
+    --varylightgray: hsl(0, 0%, 98%);
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    /* transition: 0.5s all ease; */
+    width: 80%;
+
+    margin: 0 auto;
+
+    /* border: 2px solid gray; */
+    /* background-color: var(--darkblue); */
+}
+li {
+    list-style: none;
+}
+
+/* header  */
+
+.header_section {
+    /* position: fixed;
+   top: 0;
+   width: 80%;
+   background-color: white; */
+    margin-bottom: 50px;
+    /* left:0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+}
+.navbar li {
+    padding: 0 8px;
+}
+
+.btn1 {
+    background-color: var(--brightred);
+    padding: 12px 18px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+}
+
+/* hero */
+.hero_section {
+    margin-top: 60px;
+    display: flex;
+}
+
+.hero__left,
+.hero__right {
+    width: 50%;
+}
+
+.hero__right img {
+    max-width: 100%;
+}
+
+.hero__left {
+    /* border: 1px solid red; */
+    padding-right: 90px;
+}
+.hero__right {
+    /* border: 1px solid yellow; */
+}
+
+.hero__left h1 {
+    color: var(--darkblue);
+    font-size: 44px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero__left p {
+    color: var(--darkgrayishblue);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* manage */
+
+.manage {
+    margin-top: 80px;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+.manage_left {
+    width: 40%;
+}
+.manage_left h2 {
+    color: var(--darkblue);
+    margin-bottom: 10px;
+}
+.manage_left p {
+    color: var(--darkgrayishblue);
+    width: 80%;
+}
+.manage_right {
+    width: 50%;
+}
+
+.box {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+}
+.box .btn2 {
+    /* padding: 3px 8px; */
+    width: 20%;
+    color: var(--brightred);
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+.box .manage_content {
+    width: 80%;
+}
+
+.manage_content h3 {
+    color: var(--darkblue);
+}
+.manage_content p {
+    color: var(--darkgrayishblue);
+    font-size: 12px;
+    /* width: 80%; */
+}
+
+.reviews {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.card_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+    /* border: 1px solid red;  */
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 30%;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.reviews h2 {
+    color: var(--darkblue);
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h4 {
+    color: var(--darkblue);
+}
+.card p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: var(--darkgrayishblue);
+}
+
+.profile_img {
+    width: 60px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.profile_img img {
+    max-width: 100%;
+}
+
+/* work */
+.bara_container {
+    background-color: var(--brightred);
+}
+.work {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.work h2 {
+    width: 40%;
+    color: white;
+}
+.work button {
+    color: var(--brightred);
+    background-color: white;
+}
+
+/* footer */
+.footer_big_container {
+    background-color: var(--verydarkblue);
+    color: var(--varylightgray);
+}
+footer {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+footer .navbar {
+    flex-direction: column;
+}
+footer .navbar li {
+    padding-bottom: 8px;
+}
+footer .first .logo_wrapper {
+    margin-bottom: 70px;
+}
+
+footer input {
+    background-color: white;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 8px 12px;
+}
+footer .fourth button {
+    background-color: var(--brightred);
+    border: 1px solid transparent;
+    padding: 8px 18px;
+    border-radius: 30px;
+}
+
+.copy {
+    margin-top: 70px;
+    color: var(--darkgrayishblue);
+    font-size: 14px;
+}
